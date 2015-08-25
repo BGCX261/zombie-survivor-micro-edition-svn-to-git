@@ -1,0 +1,19 @@
+package com.ZombieInvader.javafiles;
+
+import java.util.TimerTask;
+
+public class Clock extends TimerTask {
+
+  int timeLeft;
+
+  public Clock(int maxTime) {
+    timeLeft = maxTime;
+  }
+
+  public void run() {
+	timeLeft--;
+  }
+
+  public int getTimeLeft() { return this.timeLeft; }
+
+}

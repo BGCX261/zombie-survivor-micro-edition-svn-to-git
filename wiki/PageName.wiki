@@ -1,0 +1,16 @@
+#summary This page provides the user with instructions for playing the game.
+
+
+= Introduction =
+
+As the sole survivor left after a Zombie apocalypse. You must try to fight your way through wave after wave of Zombies. Beward of the evil Deathghoul who has returned from the realm of evil to ensure your death! Do you have what it takes to survive?
+
+= Instructions = 
+ * To move the hunter left or right arrow buttons
+ * To shoot the hunters gun press the up arrow
+ * To pass levels you must kill all the zombies before they reach you
+ * The goal of the game is to obtain the highest score possible
+ * To pause the game press the top right key
+
+= Objective =
+To survive as long as you can and gaining the highest score. 

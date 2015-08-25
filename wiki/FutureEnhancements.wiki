@@ -1,0 +1,45 @@
+#summary Future enhancement plans for Zombie Invaders.
+= Introduction =
+
+Zombie Invaders is heading in the right direction with a simple shooter game.  Expanding the map so the hunter will actually be able to walk around a playing field will be something worth implementing in the future.  Generating bosses depending on where the hunter is on the map will also have to be taken into consideration as well.  With a new map implementation the entire strategy of the game will have to change but this will allow the game to be more interesting as we would be able to incorporate more situation events into the application. 
+
+Write a description of how you envision this software developing. Are there stages to this development (milestones)? What feature set belongs to each stage? Create an itemized list of enhancements that outlines the future direction of the software. Add these enhancement items to the issues area in Google code. Also be sure that all the bug issues are also listed in the issues if they are known.
+
+= Details =
+==Game play==
+1. Adding sound
+Implement sound to the zombies giving them a sound they make while walking/dying. 
+
+2. Splash Screen
+Adding a splash screen in the beginning of the game to show the title and to put Start button. Once you press the start button you will be brought to another screen to choose your gender. 
+
+3. Creating a larger playing map that is restricted by boundaries such as walls, shrubs, houses, doors, and so forth.
+
+4. Adding in more weapons
+
+5. Different selection of characters
+
+6. Add Cardinal directional Hunter movement
+
+7. Power ups - Faster bullet speed, Stronger bullets, move faster.
+
+8. Adding bonus drops to increase score
+
+9. Achievements - Completed 1 Level, Made it to Level 5, etc.  
+
+10.
+
+==Social Component==
+This started out as a simple idea: push scores from this app to a server where all users can compare scores. As of right now, there are too many limitations in j2me that will let us interact with the servlet that is available to us.
+
+Creating a new servlet or modifying current servlet is out of the project scope for now (for the project owners) but welcome any patches. Check the download area for the classes we've tried out to get this working: json and httpConnection.
+
+The basic workflow should be the following:
+
+1. Pull totalScore from app at gameOver.
+
+2. Compare totalScore to highest score from server.
+
+3. If totalScore is higher, you sir/maam are epic.
+
+4. If not, well then you're just a regular joe/jane...

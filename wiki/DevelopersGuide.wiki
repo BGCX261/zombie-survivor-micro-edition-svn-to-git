@@ -1,0 +1,28 @@
+#summary Zombie Invaders code break down.
+#labels -
+= Introduction =
+Welcome to Zombie Invaders. We wanted to keep our code simple for anyone to read through and understand what exactly everything is doing.  We started by created different classes to maintain our sprites, game canvas, and the clock. The game canvas is the main class in our game, which runs the infinite loop and implements all the elements in our game.
+
+= Details =
+
+ZIGAMECANVAS
+ # Initializes all the instance variables
+ # Lists procedures for generating Sprite images
+ # Creates Tiled Layer which is made from 1 image and broken down into tiles and restructured in an array.
+ # Creates different sprites using the create methods(ie createZombie). These methods are constructed from the sprite classes in our project.  DeathGhoulSprite.java, ZombieSprite.Java, BulletSprite.Java, HunterSprite.Java.  All of these classes implement the methods for movements, spawn positions, and animation for each.
+ # Within the games infinite loop the time left is constantly being calculated, the game score is being checked, and the state of the game; did someone get eaten by a zombie?.
+ # in the input procedure is where the player is allowed Hunter control.  Simply moving her along the X axis of the plane.
+ # In the render procedure game levels are implemented. Zombie and Deathghoul movements are called from their classes.  To me this was the most important procedure because this is where the actual death of enemies and the Hunter is implemented.  Using collision detection and stacks we were able to successfully allow the Hunter to kill his enemies and revenge her families death!  I forget to mention the highscore is calculated here also.
+
+Hunter Sprite Class
+ # Hunter sprite is created using the animation constructor.
+ # Movement is implement from player controls in the ZIGAMECANVAS Class.
+
+Bullet Sprite Class
+ # Bullet animation constructor is called to create an animation for the bullet object.
+ # move method controls bullet movement up the x axis of the game plane.
+
+Zombie Sprite Class
+ # Zombie sprite is created using the animation constructor.
+ # Position is randomly set using the random number generator.
+ # Zombies move method is called here to give the Zombie a staggering effect.  This also uses the random number generator, for the Y axis of the game plane.
